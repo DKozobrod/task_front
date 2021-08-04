@@ -26,14 +26,12 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-
 }
 
 .container {
     max-width: 980px;
     margin: 0px auto;
 }
-
 
 .header {
     background-color: #FFFFFF;
@@ -51,22 +49,52 @@ body {
 
 .header__logo {
     margin-left: 25px;
+    margin-top: 4px;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
     color: #000000;
+    background-color: #FFFFFF;
 }
 
-.header__go{
-    border: 1px solid #9B51E0;
-    background-color: #9B51E0;
-    font-weight: bold;
+* {
+    box-sizing: border-box;
+}
+
+form.example input[type=text] {
+    padding: 10px;
     font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
+    border: 1px solid #9B51E0;
+    float: left;
+    width: 80%;
+    background: #ffffff;
 }
 
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #9B51E0;
+    color: white;
+    font-size: 14px;
+    border: 1px solid #9B51E0;
+    border-left: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form.example button:hover {
+    background: #9B51E0;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* ----------------------- */
 
 .navigation {
     width: 100%;
@@ -203,7 +231,6 @@ li > a:hover {
 .posts__one, .posts__two, .posts__three, .posts__four {
     flex: 0 1 50%;
     margin-top: 15px;
-    /* padding: 0px 11px; */
 }
 
 .posts__pow  {
@@ -243,7 +270,6 @@ li > a:hover {
     text-decoration: underline;
 }
 
-
 /* ------------ */
 .service__row {
     display: flex;
@@ -279,7 +305,6 @@ li > a:hover {
     box-sizing: border-box;
 }
 
-
 .service__text {
     flex: 1 1 auto;
     padding: 0px 11px 0px 11px;
@@ -304,9 +329,7 @@ li > a:hover {
     text-decoration: underline;
 }
 
-
 /* ------------ */
-
 
 .clents__top {
     position: relative;
@@ -337,9 +360,6 @@ li > a:hover {
   padding-bottom: 19px;
 }
 
-
-
-
 .footer {
     background-color: #6D3D99;
 }
@@ -356,5 +376,3 @@ li > a:hover {
     line-height: 16px;
     color: #FFFFFF;
 }
-
-
