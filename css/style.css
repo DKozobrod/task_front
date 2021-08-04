@@ -102,13 +102,51 @@ li > a:hover {
     background-color: #FFC740;
 }
 
-
-
-.head__img {
-
+.head__pow {
+    position: relative;
+    display: block;
 }
 
+.head__text {
+    position: absolute;
+    top: 35px;
+    padding-left: 5%;
+}
 
+.head__text > h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 75px;
+    color: #FFC740;
+    padding-right: 47%;
+}
+
+.head__text > h4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    padding-right: 52%;
+    margin-top: 8px;
+}
+
+.button__head {
+    background-color: #6D3D99;
+    border: none;
+    color: white;
+    padding: 8px 23px 9px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 12px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+}
 
 .line__text {
     max-width: 980px;
@@ -153,9 +191,6 @@ li > a:hover {
 }
 
 /* ------------ */
-
-.posts {
-}
 
 .posts__block {
     display: flex;
@@ -208,11 +243,66 @@ li > a:hover {
     text-decoration: underline;
 }
 
-a:link {
-    color: red;
+
+/* ------------ */
+.service__row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin: 0px -11px;
+}
+
+.service__one, .service__two, .service__three {
+    flex: 0 1 33.3%;
+    margin-top: 15px;
+}
+
+.service__columns {
+    flex: 0 1 50%;
+    margin-top: 15px;
+    display: flex;
+    padding-left: 11px;
+}
+
+.service__two {
+    
+}
+
+.column__one, .column__two, .column__three {
+    flex: 0 1 50%;
+}
+
+.service__img {
+    flex: 0 0 auto;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
 }
 
 
+.service__text {
+    flex: 1 1 auto;
+    padding: 0px 11px 0px 11px;
+}
+
+.service__text > p {
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: justify;
+    color: #000000;
+}
+
+.service__text > a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    text-decoration: underline;
+}
 
 
 /* ------------ */
@@ -244,8 +334,7 @@ a:link {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 33px;
-  padding-bottom: 33px;
+  padding-bottom: 19px;
 }
 
 
