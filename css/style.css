@@ -23,9 +23,7 @@ body {
 }
 
 .wrapper {
-    min-height: 100%; /* что бы оболочка на весь экран */
-    overflow: hidden; /* чтобы ничего не вылезло за экран */
-
+    overflow: hidden;
     display: flex;
     flex-direction: column;
 
