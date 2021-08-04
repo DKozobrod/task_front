@@ -277,6 +277,7 @@ li > a:hover {
     padding-left: 11px;
     padding-right: 11px;
     margin: 0px -11px;
+    padding-bottom: 33px;
 }
 
 .service__one, .service__two, .service__three {
@@ -288,21 +289,20 @@ li > a:hover {
     flex: 0 1 50%;
     margin-top: 15px;
     display: flex;
+    flex-wrap: wrap;
     padding-left: 11px;
 }
 
-.service__two {
-    
-}
-
 .column__one, .column__two, .column__three {
-    flex: 0 1 50%;
+    flex: 0 1 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 .service__img {
-    flex: 0 0 auto;
-    border: 1px solid #C4C4C4;
-    box-sizing: border-box;
+    padding: 1px;
+    background: #C4C4C4;
+    margin-bottom: 11px;
 }
 
 .service__text {
@@ -310,8 +310,30 @@ li > a:hover {
     padding: 0px 11px 0px 11px;
 }
 
+.service__texts {
+    flex: 1 1 auto;
+    padding: 0px 11px 0px 11px;
+}
+
+.service__texts > p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: justify;
+    color: #000000;
+    margin-bottom: 18px;
+}
+.service__texts > a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    text-decoration: underline;
+}
+
 .service__text > p {
-    margin-bottom: 15px;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
