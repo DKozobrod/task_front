@@ -30,7 +30,7 @@ body {
 
 .container {
     max-width: 980px;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 .header {
@@ -68,14 +68,14 @@ form.example input[type=text] {
     border: 1px solid #9B51E0;
     float: left;
     width: 80%;
-    background: #ffffff;
+    background-color: #ffffff;
 }
 
 form.example button {
     float: left;
     width: 20%;
     padding: 10px;
-    background: #9B51E0;
+    background-color: #9B51E0;
     color: white;
     font-size: 14px;
     border: 1px solid #9B51E0;
@@ -85,7 +85,7 @@ form.example button {
 }
 
 form.example button:hover {
-    background: #9B51E0;
+    background-color: #9B51E0;
 }
 
 form.example::after {
@@ -98,11 +98,11 @@ form.example::after {
 
 .navigation {
     width: 100%;
-    background: rgb(253, 253, 253);
+    background-color: rgb(253, 253, 253);
     margin-bottom: 17px;
 }
 
-ul {
+.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -111,11 +111,11 @@ ul {
     flex-wrap: wrap;
 }
 
-li {
+.nav__li {
     flex:1 0 auto;
 }
 
-li > a {
+.nav__li > a {
     display: block;
     font-size: 14px;
     line-height: 16px;
@@ -124,7 +124,7 @@ li > a {
     padding: 16px 14px;
 }
 
-li > a:hover {
+.nav__li > a:hover {
     color: rgb(251, 251, 251);
     font-weight: bold;
     background-color: #FFC740;
@@ -141,7 +141,7 @@ li > a:hover {
     padding-left: 5%;
 }
 
-.head__text > h1 {
+.head__text__top {
     font-style: normal;
     font-weight: normal;
     font-size: 64px;
@@ -150,7 +150,7 @@ li > a:hover {
     padding-right: 47%;
 }
 
-.head__text > h4 {
+.head__text__botom {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -178,7 +178,7 @@ li > a:hover {
 
 .line__text {
     max-width: 980px;
-    margin: 0px auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -188,12 +188,12 @@ li > a:hover {
     margin-bottom: 16px;
 }
 .line__before {
-    background: #9B51E0;
+    background-color: #9B51E0;
     height: 16px;
     width: 19px;
 }
 .line__before__yellow {
-    background: #FFC740;
+    background-color: #FFC740;
     height: 16px;
     width: 19px;
 }
@@ -208,12 +208,12 @@ li > a:hover {
     margin-right: 5px;
 }
 .line__after {
-    background: #9B51E0;
+    background-color: #9B51E0;
     height: 16px;
     width: 100%;
 }
 .line__after__yellow {
-    background: #FFC740;
+    background-color: #FFC740;
     height: 16px;
     width: 100%;
 }
@@ -225,10 +225,10 @@ li > a:hover {
     flex-wrap: wrap;
     padding-left: 11px;
     padding-right: 11px;
-    margin: 0px -11px;
+    margin: 0 -11px;
 }
 
-.posts__one, .posts__two, .posts__three, .posts__four {
+.post {
     flex: 0 1 50%;
     margin-top: 15px;
 }
@@ -244,6 +244,7 @@ li > a:hover {
     border: 2px solid #FFC740;
     box-sizing: border-box;
     margin-bottom: 33px;
+    height: min-content;
 }
 
 .posts__text {
@@ -276,11 +277,11 @@ li > a:hover {
     flex-wrap: wrap;
     padding-left: 11px;
     padding-right: 11px;
-    margin: 0px -11px;
+    margin: 0 -11px;
     padding-bottom: 33px;
 }
 
-.service__one, .service__two, .service__three {
+.serv {
     flex: 0 1 33.3%;
     margin-top: 15px;
 }
@@ -293,26 +294,35 @@ li > a:hover {
     padding-left: 11px;
 }
 
-.column__one, .column__two, .column__three {
+.colum {
     flex: 0 1 100%;
     display: flex;
     flex-direction: row;
 }
 
+.lorem {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+}
+
 .service__img {
     padding: 1px;
-    background: #C4C4C4;
+    background-color: #C4C4C4;
     margin-bottom: 11px;
+    height: min-content;
 }
 
 .service__text {
     flex: 1 1 auto;
-    padding: 0px 11px 0px 11px;
+    padding: 0 11px 0 11px;
 }
 
 .service__texts {
     flex: 1 1 auto;
-    padding: 0px 11px 0px 11px;
+    padding: 0 11px 0 11px;
 }
 
 .service__texts > p {
