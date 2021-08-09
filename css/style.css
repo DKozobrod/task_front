@@ -141,7 +141,7 @@ form.example::after {
     padding-left: 5%;
 }
 
-.head__text__top {
+.text__title {
     font-style: normal;
     font-weight: normal;
     font-size: 64px;
@@ -150,7 +150,7 @@ form.example::after {
     padding-right: 47%;
 }
 
-.head__text__botom {
+.text__subtitle {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -192,7 +192,7 @@ form.example::after {
     height: 16px;
     width: 19px;
 }
-.line__before__yellow {
+.line__before-yellow {
     background-color: #FFC740;
     height: 16px;
     width: 19px;
@@ -212,7 +212,7 @@ form.example::after {
     height: 16px;
     width: 100%;
 }
-.line__after__yellow {
+.line__after-yellow {
     background-color: #FFC740;
     height: 16px;
     width: 100%;
