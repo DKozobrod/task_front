@@ -58,10 +58,6 @@ body {
     background-color: #FFFFFF;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 form.example input[type=text] {
     padding: 10px;
     font-size: 14px;
@@ -141,13 +137,17 @@ form.example::after {
     padding-left: 5%;
 }
 
+.head__img > img {
+    width: 980px;
+}
+
 .text__title {
     font-style: normal;
     font-weight: normal;
     font-size: 64px;
     line-height: 75px;
     color: #FFC740;
-    padding-right: 47%;
+    /* padding-right: 47%; */
 }
 
 .text__subtitle {
@@ -156,10 +156,28 @@ form.example::after {
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
-    padding-right: 52%;
+    width: 55%;
+    /* padding-right: 52%; */
     margin-top: 8px;
 }
 
+@media (max-width: 768px) {
+    .text__subtitle {
+        width: 85%;
+    }
+    .text__title {
+    font-size: 46px;
+    }
+}
+
+@media (max-width: 375px) {
+    .text__subtitle {
+        width: 95%;
+    }
+    .text__title {
+    font-size: 35px;
+    }
+}
 .button__head {
     background-color: #6D3D99;
     border: none;
@@ -233,7 +251,7 @@ form.example::after {
     margin-top: 15px;
 }
 
-.posts__pow  {
+.posts__pow {
     display: flex;
     padding-left: 11px;
 }
@@ -245,11 +263,38 @@ form.example::after {
     box-sizing: border-box;
     margin-bottom: 33px;
     height: min-content;
+    width: min-content;
 }
 
+@media (max-width: 768px) {
+    .posts__block {
+    display: flex;
+    flex-direction: column;
+    }
+    .posts__img {
+    margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    .posts__img {
+    margin-bottom: 15px;
+    }
+}
 .posts__text {
     flex: 1 1 auto;
-    padding: 0px 10px 0px 20px;
+    padding: 0 10px 0 20px;
+}
+
+@media (max-width: 375px) {
+    .posts__pow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .posts__text {
+    padding: 0 10px 0 0;
+    }
 }
 
 .posts__text > p {
@@ -279,6 +324,12 @@ form.example::after {
     padding-right: 11px;
     margin: 0 -11px;
     padding-bottom: 33px;
+}
+
+@media (max-width: 675px) {
+    .service__row {
+        display: block;
+    }  
 }
 
 .serv {
