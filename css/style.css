@@ -459,3 +459,20 @@ form.example::after {
     line-height: 16px;
     color: #FFFFFF;
 }
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content__video {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.content__audio {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
