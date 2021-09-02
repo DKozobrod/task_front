@@ -58,6 +58,14 @@ body {
     background-color: #FFFFFF;
 }
 
+.header__logo {
+    animation: blink-animation 1s infinite;
+}
+@keyframes blink-animation {
+    to { background: radial-gradient(#FFC740, #ffffff); }
+}
+
+
 form.example input[type=text] {
     padding: 10px;
     font-size: 14px;
@@ -148,6 +156,10 @@ form.example::after {
     line-height: 75px;
     color: #FFC740;
     /* padding-right: 47%; */
+}
+  
+.text__subtitle { 
+ animation: bouncing 0.5s cubic-bezier(0.1,0.25,0.1,1) 0s infinite alternate both; 
 }
 
 .text__subtitle {
